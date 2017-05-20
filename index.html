@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--*******JQuery********-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--*****Local js and css **********-->
+    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Viking RPG</title>
+</head>
+<body >
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Game Bootcamp</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="https://milucf.github.io/week-3-game">Hangman</a></li>
+        <li class="active"><a href="#">Viking RPG</a></li>
+      </ul>
+     <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>-->
+    </div>
+  </div>
+</nav>
+
+
+
+    <div class="row">
+        <div class="col-sm-12">
+       <div id="characterOptions"></div>
+       </div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row">
+
+        <div id="userPanel" class="col-sm-6">
+            <div class="panel panel-success">
+            <div class="panel-heading">Your Character</div>
+            <div class="panel-body">
+                <div id="userChar" class="img-thumbnail panelProfile"></div>
+            </div>
+            </div>
+        </div>
+
+        <div id="enemiesPanel" class="col-sm-6">
+            <div class="panel panel-danger">
+             <div class="panel-heading">Enemies Available To Fight</div>
+             <div class="panel-body">
+                 <div id="enemyChar1"  class="img-thumbnail panelProfile"></div>
+                 <div id="enemyChar2"  class="img-thumbnail panelProfile"></div>
+                 <div id="enemyChar3"  class="img-thumbnail panelProfile"></div>
+             </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+      <!--******************alerts******************-->
+    <div class="container-fluid text-center"><br>
+        <div class="row">
+            <div id="alertbar" class="col-sm-12">Choose a Character from above</div>
+        </div>
+    </div>
+
+        <!--*****************  life bars  ******************-->
+    <div class="container-fluid bg1"><br>
+        <div class="row">
+
+            <div class="col-sm-6">
+               <div class="row"><div class="col-sm-1"><img id="userHpIcon" class="img-rounded"></div>
+               <div class="col-sm-11">
+                <div class="progress">
+                <div id="attackerHP" class="progress-bar" role="progressbar" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                      100
+                </div>
+                </div>
+               </div>
+               </div>
+            </div>
+
+           <div class="col-sm-6">
+               <div class="row"><div class="col-sm-1"><img id="enemyHpIcon" class="img-rounded" ></div>
+               <div class="col-sm-11">
+                <div class="progress">
+                <div id="defenderHP" class="progress-bar" role="progressbar" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                      100
+                </div>
+                </div>
+               </div>
+            </div>
+
+        </div>
+    </div>
+        <!--******************  end life bars  ***************-->
+
+      <div class="container-fluid bg1">
+          <div clas="row"><div id="controlBar" class="col-sm-12">
+            <button id="btnAttack" class="btn btn-default">attack</button>
+             <button id="btnRestart" class="btn btn-default">Restart</button>
+            </div></div>
+      </div>
+
+
+
+    <div class="container-fluid bg1 text-center">
+     <div class="row">
+    <div class="col-sm-12">
+       <div id="battlefield" class="jumbotron" > 
+           
+           <!--****************User******************-->
+               <div id="attacker" >
+               <img id="userWaiting"  >
+               <img id="userAttacking"   >
+               </div>
+            <!--*******************enemy*****************-->
+               <div id="defender" >
+               <img id="enemyWaiting"   >
+               <img id="enemyAttacking"  >
+               </div>
+    </div>
+       </div>
+    </div>
+    </div>
+
+    
+<footer class="text-center">
+&copy;2017 milucf
+</footer>
+
+
+</body>
+</html>

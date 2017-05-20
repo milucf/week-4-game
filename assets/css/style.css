@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif,serif,'Times New Roman', Times,arial;
+    background-color:#333;  
+}
+
+#characterOptions{
+    width:100%;
+    text-align: center;
+    padding:50px 20px;
+}
+
+.charProfile{
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.charProfile h4{
+    font-weight: bold;
+    color:#777777;
+}
+.charProfile h6, .panel-body h6{
+    font-family:cursive;
+    font-size: 12px;
+}
+
+.charProfile .hp, .panel-body .hp{
+    font-family: cursive;
+}
+
+.charProfile .attack, .panel-body .attack{
+    display: none;
+}
+
+.charProfile .counter-attack, .panel-body .counter-attack{
+    display: none;
+}
+
+
+
+.panel-body img{
+    width:70px;
+    height: 70px;
+}
+
+.panelProfile{
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#battlefield{
+   position: relative;
+   height: 500px;
+   background-color: #ddd;
+}
+
+
+ #attacker{
+     position:absolute;
+     left:0;
+     bottom: 10px;
+ }
+  #defender{
+     position:absolute;
+     right:0;
+     bottom: 10px;
+ }
+
+ #enemyHpIcon, #userHpIcon{
+     width:50px;
+     height: auto;
+ }
+ .bg1{
+     background-color: #002147;
+     padding: 3px;
+ }
+
+ #alertbar{
+     color:#ffffff;
+     font-size: 15px;
+ }
+
+ footer{
+     background-color: #000000;
+     padding: 20px;
+     color: #444444;
+     font-size: 8px;
+ }
+
+  @media only screen and (max-width: 900px) {
+ #attacker img, #defender img{
+    width:400px;
+    height:auto;
+ }
+#battlefield{
+   height: 350px;
+}
+ }
+
+ @media only screen and (max-width: 600px) {
+ #attacker img, #defender img{
+    width:250px;
+    height:auto;
+ }
+#battlefield{
+   height: 200px;
+}
+ }
+
+
+ 
+
+
