@@ -20,7 +20,7 @@ Once the player selects an opponent, that enemy is moved to a `defender area`.
 
 The player will keep hitting the attack button in an effort to defeat their opponent.When the defender's HP is reduced to zero or below, remove the enemy from the defender area. The player character can now choose a new opponent.
 
-The player wins the game by defeating all enemy characters. The player loses the game the game if their character's HP falls to zero or below.
+The player wins the game by defeating all enemy characters. The player loses the game if their character's HP falls to zero or below.
 
 ## Demo
 
